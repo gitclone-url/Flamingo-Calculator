@@ -47,8 +47,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: app-debug.apk
-        path: releases/app-debug.apk
-
-    - name: clean everything
-     run : ./gradlew cleanBuildCache
-         
+        path: releases/app-debug.apk       
