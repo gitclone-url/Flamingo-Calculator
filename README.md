@@ -1,2 +1,2 @@
-# Flamingo-Calculator-
+# Flamingo-Calculator
 A simple calculator App
