@@ -14,8 +14,6 @@ jobs:
   build:
     name: start run
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
       
       steps:
       - name: Check out
