@@ -1,4 +1,4 @@
-name: Magisk Build
+name: Flamingo Calculator Build
 
 on:
   push:
@@ -12,7 +12,7 @@ on:
 
 jobs:
   build:
-    name: run
+    name: start run
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -30,11 +30,11 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
           
-      - name: Grant execute permission for gradlew
-         run: chmod +x gradlew
+      - name: Make gradlew executable
+       run: chmod +x ./gradlew
           
       - name: clean build directory 
-         run: ./gradlew clean
+       run: ./gradlew clean
          
       - name: Build with Gradle
         uses: gradle/gradle-build-action@v2
