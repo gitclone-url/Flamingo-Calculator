@@ -38,12 +38,14 @@ jobs:
       uses: gradle/gradle-build-action@v2
       with:
         gradle-version: '8.0.2'
-        args: 'assembleDebug'
       env:
         JAVA_HOME: ${{ matrix.java-version }}
-               
+
+    - name: Build Application
+      run: ./gradlew assembleDebug
+           
     - name: Upload APK
       uses: actions/upload-artifact@v3
       with:
         name: app-debug.apk
-        path: app/build/outputs/apk/debug/app-debug.apk 
+        path: release app/app-debug.apk
