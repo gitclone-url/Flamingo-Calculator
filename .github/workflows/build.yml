@@ -12,7 +12,6 @@ on:
 
 jobs:
   build:
-    name: start run
     runs-on: ubuntu-latest
       
     steps:
