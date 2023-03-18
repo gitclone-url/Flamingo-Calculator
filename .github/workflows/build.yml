@@ -32,7 +32,7 @@ jobs:
       run: chmod +x ./gradlew
           
     - name: clean build directory 
-      run: ./gradlew clean
+      run: ./gradlew clean && ./gradlew cleanBuildCache
          
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
