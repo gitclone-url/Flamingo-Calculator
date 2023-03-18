@@ -5,6 +5,11 @@ plugins {
 android {
     compileSdkVersion 33
 
+    packagingOptions {
+        exclude 'META-INF/AL2.0'
+        exclude 'META-INF/LGPL2.1'
+    }
+
     defaultConfig {
         applicationId "com.testapp.flamingocalculator"
         resConfigs 'ar', 'az', 'bn', 'bs', 'de', 'el', 'es', 'fa', 'fr', 'hi', 'hr', 'in', 'it', 'ja', 'mk', 'nb-rNO', 'pt-rBR', 'ru', 'tr', 'uk', 'vi', 'zh-rHK', 'zh-rTW'
