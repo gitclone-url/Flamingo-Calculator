@@ -48,4 +48,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: app-debug.apk
-        path: release app/app-debug.apk
+        path: releases/app-debug.apk
